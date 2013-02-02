@@ -131,24 +131,26 @@ $(function() {
 
 <pre>
 $('#presentation').present({
-    initialScale : 85,     // percentage value to scale on init
-    initialTheme : 'Dark', // choose between Dark or Light
-    slideTimer   : 4500,   // how long ( in milliseconds ) slides should be shown in play mode
-    stepTimer    : 1500,   // how long ( in milliseconds ) steps should be shown in play mode
 
-    playOnInit   : false,  // whether or not to automatically begin playing the slides on init
-    bindToHistory: true,   // whether on not to modify browser's history
-    controlPanel : true,   // whether or not to add a control panel
-    loopPlay     : false,  // whether or not to loop playing the slides
-    scaleOnResize: true,   // whether or not to scale the slides on window resize
-    transition   : true,   // whether or not to use slide transitions
-    userEvents   : true,   // whether or not to bind user events to slides controls
+initialScale : 85,     // percentage value to scale on init
+initialTheme : 'Dark', // choose between Dark or Light
+slideTimer   : 4500,   // how long (in milliseconds) slides should be shown in play mode
+stepTimer    : 1500,   // how long (in milliseconds) steps should be shown in play mode
 
-    onReady      : $.noop, // gets called when present is setup and ready to go
-    onPlay       : $.noop, // gets called when the play() method is called
-    onStop       : $.noop, // gets called when the stop() method is called
-    onPause      : $.noop, // gets called when the pause() method is called
-    onRestart    : $.noop, // gets called when the restart() method is called
+playOnInit   : false,  // whether or not to automatically begin playing the slides
+bindToHistory: true,   // whether on not to modify browser's history
+controlPanel : true,   // whether or not to add a control panel
+loopPlay     : false,  // whether or not to loop playing the slides
+scaleOnResize: true,   // whether or not to scale the slides on window resize
+transition   : true,   // whether or not to use slide transitions
+userEvents   : true,   // whether or not to bind user events to slides controls
+
+onReady      : $.noop, // gets called when present is setup and ready to go
+onPlay       : $.noop, // gets called when the play() method is called
+onStop       : $.noop, // gets called when the stop() method is called
+onPause      : $.noop, // gets called when the pause() method is called
+onRestart    : $.noop, // gets called when the restart() method is called
+
 });
 </pre>
         </article>

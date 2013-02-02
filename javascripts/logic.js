@@ -671,7 +671,7 @@ new function( document, $, undefined ) {
                      if ( percent < 40 )  percent = 40;
                 else if ( percent > 100 ) percent = 100;
 
-                $el.css( 'font-size', ( percent * scale ).toFixed( 0 ) + '%');
+                $el.css( 'font-size', Math.round( percent * scale ) + '%');
 
                 if ( current === percent ) return;
 
