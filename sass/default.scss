@@ -20,7 +20,7 @@ $subTitleColor: #D8D8D8;
 .presentation[data-theme="Dark"] {
   background-color: $presentationBackground;
 
-  .slide {
+  &>article,&>.slide {
     background: $slideBackground;
     color: $color;
 
@@ -34,7 +34,7 @@ $subTitleColor: #D8D8D8;
 // Transition
 .presentation[data-transition="On"] {
 
-  .slide {
+  &>article,&>.slide {
     opacity: .1;
 
     &.farPrev,

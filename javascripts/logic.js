@@ -387,9 +387,8 @@ new function( document, $, undefined ) {
 
             $.each( $slides, function( ind, slide ) {
                 $slide = $( slide );
-                slideId = $slide.attr( 'id' ) || opts.slideClass + ( $slide.index() + 1 );
-                $slide.attr( 'id', id + '_' + slideId )
-                    .addClass( opts.slideClass );
+                slideId = $slide.attr( 'id' ) || 'slide' + ( $slide.index() + 1 );
+                $slide.attr( 'id', id + '_' + slideId );
 
                 me.slides.push( new Slide( $slide,  opts ) );
                 me.slidesCount = me.slides.length;

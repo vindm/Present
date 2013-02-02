@@ -20,7 +20,7 @@ html, body {
   @include transition('background-color', '1.5s');
 
 
-  .slide {
+  &>article, &>.slide {
     display: none;
     @include absoluteCentered($slideW, $slideH, $slideP);
 
