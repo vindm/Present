@@ -1,0 +1,63 @@
+@import "_mixins";
+@import "_icons";
+@import "_variables";
+
+@import "_layout";
+@import "_content";
+@import "_controls";
+
+
+
+// Dark Theme
+$presentationBackground: #202020;
+$slideBackground: #272727;
+$color: #CEC1AB;
+$linkColor:  #D5A0F8;
+$titleColor: #ADC54F;
+$subTitleColor: #D8D8D8;
+
+
+.presentation[data-theme="Dark"] {
+  background-color: $presentationBackground;
+
+  .slide {
+    background: $slideBackground;
+    color: $color;
+
+    a { @include colorlink($linkColor); }
+    h1, h2, h3 { color: $titleColor }
+    h4, h5, h6 { color: $subTitleColor; }
+  }
+}
+
+
+// Transition
+.presentation[data-transition="On"] {
+
+  .slide {
+    opacity: .1;
+
+    &.farPrev,
+    &.farNext,
+    &.prev,
+    &.next,
+    &.current {
+      opacity: .5;
+      display: block;
+    }
+
+    @include transition('opacity, -webkit-transform, -moz-transform, -o-transform, transform', '.5s, .5s, .5s, .5s, .5s');
+    @include transform( translateX(0) scale(0.75) );
+
+    &.farPrev { @include transform( translateX( ( $slideW * 3 / 4 + $slideMargin ) * -2 + $slideW/4 ) scale(.5) ); }
+    &.prev    { @include transform( translateX( ( $slideW + $slideMargin ) * -1 + $slideW/4 ) scale(.5) ); }
+    &.next    { @include transform( translateX( ( $slideW + $slideMargin ) * 1 - $slideW/4 ) scale(.5) ); }
+    &.farNext { @include transform( translateX( ( $slideW * 3 / 4 + $slideMargin ) * 2 - $slideW/4 ) scale(.5) ); }
+
+    &.current {
+      @include transform( scale(1) );
+      opacity: 1
+    }
+
+  }
+}

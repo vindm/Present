@@ -1,0 +1,33 @@
+// Presentation
+$presentationBackground: #D7D7D7;
+
+// Slide
+$slideW: 36em;
+$slideH: 27em;
+$slideP: 1em;
+$slideMargin: 10em;
+$slideBackground: white;
+
+$color: #333;
+$linkColor: #9a00ff;
+$titleColor: #666;
+$subTitleColor: #404040;
+
+
+// Control
+$controlSize: 32px;
+$activeColor: #a8a8a8;
+$hoverColor: white;
+$disabledColor: #666;
+
+// ControlPanel
+$controlsPosition: center;
+$controlsH: $controlSize+16;
+$controlsBackground: black url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACpJREFUeNpi+v//vxAQM0CxEAsDA8M7IBZigIB3TAxogAUq+w7KFwIIMAAwQQ8lo4xClgAAAABJRU5ErkJggg==");
+
+// Slider
+$scalerWidth: $controlSize*3;
+$scrollWidth: $controlSize*2;
+$ordHeight: $controlSize/8;
+$handlerWidth: ($ordHeight - 1)*2;
+$handlerHeight: $handlerWidth*2;

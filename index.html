@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html manifest="main.cache">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width">
+    <title>Present.js</title>
+
+    <link href="stylesheets/default.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="javascripts/logic.js"></script>
+</head>
+
+<body>
+    <section class="presentation" id="present.js">
+
+        <article>
+
+        <style>
+            .key {
+                margin: 0 0.5em;
+                color: black;
+                display: inline-block;
+                padding: 0.1em 0.6em 0.1em 0.6em;
+                font-size: 0.75em!important;
+                line-height: 2.5em;
+                min-width: 1.7em;
+                text-align: center;
+                text-shadow: none;
+                letter-spacing: 0;
+                -moz-border-radius: 0.5em;
+                -khtml-border-radius:0.5em;
+                -webkit-border-radius: 0.5em;
+                border-radius: 0.5em;
+                background: white;
+                box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+                -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+                -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+                -o-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+            }
+        </style>
+
+        <h3>Slides controls</h3>
+        <ul class="blank">
+            <li><span class="key">&larr;</span> and <span class="key">&rarr;</span> or scroll to move around.</li>
+            <li><span class="key">&uarr;</span> and <span class="key">&darr;</span> to zoom in and out.</li>
+            <li><span class="key">Space</span> to toggle autoplay.</li>
+            <li><span class="key">F11</span> to toggle full screen.</li>
+            <li><span class="key">T</span> to toggle theme.</li>
+            <li><span class="key">R</span> to toggle slides transition.</li>
+        </ul>
+
+    </article>
+
+        <article>
+            <h3>TOC</h3>
+            <ul>
+                <li>
+                    <a href="#installation">Installation</a>
+                <li>
+                    <a href="#usage">Usage</a>
+                <li>
+                    <a href="#customization">Customization</a>
+                <li>
+                    <a href="#demo">Demo</a>
+            </ul>
+        </article>
+
+        <article class=" smaller" id="installation">
+            <h3>Installation</h3>
+            <h4>Download</h4>
+            <p>You can download this project in either a <a href="https://github.com/vindm/presentjs/archive/master.zip">zip</a> or <a href="https://github.com/vindm/presentjs/archive/master.tar.gz">tar</a> format.</p>
+            <p><i>Via Terminal</i></p>
+<pre>
+$ wget https://github.com/github.com/vindm/presentjs/archive/v1.0.5.tar.gz
+$ tar -zxvf presentjs-1.0.5.tar.gz
+</pre>
+            <p><i>Via Git</i></p>
+<pre>
+$ git clone git://github.com/vindm/presentjs.git
+</pre>
+            <h4>Load</h4>
+            <p>Link the component and a stylesheet from your page.</p>
+<pre>
+&lt;link href="css/present.css" rel="stylesheet"/&gt;
+&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/present.js"&gt;&lt;/script&gt;
+</pre>
+        </article>
+
+        <article class=" smaller" id="usage">
+            <h3>Usage</h3>
+
+            <h4>HTML</h4>
+<pre>
+&lt;section class="presentation"&gt;
+
+    &lt;!-- First slide --&gt;
+    &lt;article&gt;
+        &lt;!-- Slide content --&gt;
+        ...
+    &lt;/article&gt;
+
+    &lt;!-- Second slide --&gt;
+    &lt;article&gt;
+        &lt;!-- Slide content --&gt;
+        ...
+    &lt;/article&gt;
+
+    &lt;!-- More slides --&gt;
+    ...
+
+&lt;/section&gt;
+</pre>
+            <h4>JS</h4>
+<pre>
+$(function() {
+    $('.presentation').present( [ options ] );
+});
+</pre>
+
+        </article>
+
+        <article class=" smaller" id="customization">
+            <h3>Customization</h3>
+
+            <p>You can override Present's default options by passing your own custom options and callbacks as the first argument to the .present() plugin.</p>
+            <p>Here's a quick snippet with all defaults declared so you can copy and paste into your project:</p>
+
+<pre>
+$('#presentation').present({
+    initialScale : 85,     // percentage value to scale on init
+    initialTheme : 'Dark', // choose between Dark or Light
+    slideTimer   : 4500,   // how long ( in milliseconds ) slides should be shown in play mode
+    stepTimer    : 1500,   // how long ( in milliseconds ) steps should be shown in play mode
+
+    playOnInit   : false,  // whether or not to automatically begin playing the slides on init
+    bindToHistory: true,   // whether on not to modify browser's history
+    controlPanel : true,   // whether or not to add a control panel
+    loopPlay     : false,  // whether or not to loop playing the slides
+    scaleOnResize: true,   // whether or not to scale the slides on window resize
+    transition   : true,   // whether or not to use slide transitions
+    userEvents   : true,   // whether or not to bind user events to slides controls
+
+    onReady      : $.noop, // gets called when present is setup and ready to go
+    onPlay       : $.noop, // gets called when the play() method is called
+    onStop       : $.noop, // gets called when the stop() method is called
+    onPause      : $.noop, // gets called when the pause() method is called
+    onRestart    : $.noop, // gets called when the restart() method is called
+});
+</pre>
+        </article>
+
+        <article id="demo">
+            <h1>
+                Title Goes Here Up
+                <br>
+                To Two Lines
+            </h1>
+            <p>
+                Vinokurov Dmitriy
+                <br>
+                Jan 29, 2013
+            </p>
+
+        </article>
+
+        <article>
+                <p>
+                    This is a slide with just text. This is a slide with just text.
+                    This is a slide with just text. This is a slide with just text.
+                    This is a slide with just text. This is a slide with just text.
+                </p>
+                <p>
+                    There is more text just underneath.
+                </p>
+        </article>
+
+        <article>
+            <h3>
+                Simple slide with header and text
+            </h3>
+            <p>
+                This is a slide with just text. This is a slide with just text.
+                This is a slide with just text. This is a slide with just text.
+                This is a slide with just text. This is a slide with just text.
+            </p>
+            <p>
+                There is more text just underneath with a <code>code sample: 5px</code>.
+            </p>
+        </article>
+
+        <article class="smaller">
+            <h3>
+                Simple slide with header and text (small font)
+            </h3>
+            <p>
+                This is a slide with just text. This is a slide with just text.
+                This is a slide with just text. This is a slide with just text.
+                This is a slide with just text. This is a slide with just text.
+            </p>
+            <p>
+                There is more text just underneath with a <code>code sample: 5px</code>.
+            </p>
+        </article>
+
+        <article>
+            <h3>
+                Slide with bullet points and a longer title, just because we
+                can make it longer
+            </h3>
+            <ul>
+                <li>
+                    Use this template to create your presentation
+                </li>
+                <li>
+                    Use the provided color palette, box and arrow graphics, and
+                    chart styles
+                </li>
+                <li>
+                    Instructions are provided to assist you in using this
+                    presentation template effectively
+                </li>
+                <li>
+                    At all times strive to maintain Google's corporate look and feel
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>
+                Slide with bullet points that builds
+            </h3>
+            <ul class="steps">
+                <li>
+                    This is an example of a list
+                </li>
+                <li>
+                    The list items fade in
+                </li>
+                <li>
+                    Last one!
+                </li>
+            </ul>
+
+            <div class="steps">
+                <p>Any element with child nodes can build.</p>
+                <p>It doesn't have to be a list.</p>
+            </div>
+        </article>
+
+        <article class="smaller">
+            <h3>
+                Slide with bullet points (small font)
+            </h3>
+            <ul>
+                <li>
+                    Use this template to create your presentation
+                <li>
+                    Use the provided color palette, box and arrow graphics, and
+                    chart styles
+                <li>
+                    Instructions are provided to assist you in using this
+                    presentation template effectively
+            </ul>
+        </article>
+
+        <article>
+            <h3>
+                Slide with a table
+            </h3>
+
+            <table>
+                <tr>
+                    <th>
+                        Name
+                    <th>
+                        Occupation
+                        <tr>
+                            <td>
+                                Luke Mahé
+                            <td>
+                                V.P. of Keepin’ It Real
+                <tr>
+                    <td>
+                        Marcin Wichary
+                    <td>
+                        The Michael Bay of Doodles
+            </table>
+        </article>
+
+        <article class="smaller">
+            <h3>
+                Slide with a table (smaller text)
+            </h3>
+
+            <table>
+                <tr>
+                    <th>
+                        Name
+                    <th>
+                        Occupation
+                        <tr>
+                            <td>
+                                Luke Mahé
+                            <td>
+                                V.P. of Keepin’ It Real
+                <tr>
+                    <td>
+                        Marcin Wichary
+                    <td>
+                        The Michael Bay of Doodles
+            </table>
+        </article>
+
+        <article>
+            <h3>
+                Styles
+            </h3>
+            <ul>
+                <li>
+                    <span class='red'>class="red"</span>
+                <li>
+                    <span class='blue'>class="blue"</span>
+                <li>
+                    <span class='green'>class="green"</span>
+                <li>
+                    <span class='yellow'>class="yellow"</span>
+                <li>
+                    <span class='black'>class="black"</span>
+                <li>
+                    <span class='white'>class="white"</span>
+                <li>
+                    <b>bold</b> and <i>italic</i>
+            </ul>
+        </article>
+
+        <article>
+            <h3>
+                Slide with an image
+            </h3>
+            <p>
+                <img style='height: 20em' src='http://html5slides.googlecode.com/svn/trunk/template/images/example-graph.png'>
+            </p>
+            <div class='source'>
+                Source: Sergey Brin
+            </div>
+        </article>
+
+        <article>
+            <h3>
+                Slide with an image (centered)
+            </h3>
+            <p>
+                <img class='centered' style='height: 20em' src='http://html5slides.googlecode.com/svn/trunk/template/images/example-graph.png'>
+            </p>
+            <div class='source'>
+                Source: Larry Page
+            </div>
+        </article>
+
+        <article class="fill">
+            <h3>
+                Image filling the slide (with optional header)
+            </h3>
+            <img src='http://html5slides.googlecode.com/svn/trunk/template/images/example-cat.jpg'>
+            <div class='source white'>
+                Source: Eric Schmidt
+            </div>
+        </article>
+
+        <article>
+            <h3>
+                This slide has some code
+            </h3>
+            <section>
+                <pre>
+&lt;script type='text/javascript'&gt;
+  // Say hello world until the user starts questioning
+  // the meaningfulness of their existence.
+  function helloWorld(world) {
+    for (var i = 42; --i &gt;= 0;) {
+      alert('Hello ' + String(world));
+    }
+  }
+&lt;/script&gt;
+&lt;style&gt;
+  p { color: pink }
+  b { color: blue }
+  u { color: 'umber' }
+&lt;/style&gt;
+                </pre>
+            </section>
+        </article>
+
+        <article class="smaller">
+            <h3>
+                This slide has some code (small font)
+            </h3>
+            <section>
+                <pre>
+&lt;script type='text/javascript'&gt;
+  // Say hello world until the user starts questioning
+  // the meaningfulness of their existence.
+  function helloWorld(world) {
+    for (var i = 42; --i &gt;= 0;) {
+      alert('Hello ' + String(world));
+    }
+  }
+&lt;/script&gt;
+&lt;style&gt;
+  p { color: pink }
+  b { color: blue }
+  u { color: 'umber' }
+&lt;/style&gt;
+                </pre>
+            </section>
+        </article>
+    
+        <article>
+            <q>
+                The best way to predict the future is to invent it.
+            </q>
+            <div class='author'>
+                Alan Kay
+            </div>
+        </article>
+    
+        <article class="smaller">
+            <q>
+                A distributed system is one in which the failure of a computer
+                you didn’t even know existed can render your own computer unusable.
+            </q>
+            <div class='author'>
+                Leslie Lamport
+            </div>
+        </article>
+
+        <article>
+            <h3>
+                Thank you!
+            </h3>
+    
+            <ul>
+                <li>
+                    <a href='http://www.google.com'>google.com</a>
+            </ul>
+        </article>
+
+    </section>
+
+
+    <!--[if lt IE 9]>
+    <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+    <script>CFInstall.check({ mode: "overlay" });</script>
+    <![endif]-->
+
+    <script>
+        // Check if new appcache is available, load it, and reload page.
+        if (window.applicationCache) {
+            window.applicationCache.addEventListener('updateready', function(e) {
+                if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+                    window.applicationCache.swapCache();
+                    if (confirm('A new version of this site is available. Load it?')) {
+                        window.location.reload();
+                    }
+                }
+            }, false);
+        }
+    </script>
+
+</body>
+</html>

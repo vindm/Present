@@ -1,0 +1,353 @@
+.footer {
+  position: absolute;
+  z-index: 101;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  text-align: $controlsPosition;
+
+  &:hover {
+    .controls {
+      opacity: 1;
+    }
+  }
+}
+
+.controls {
+  display: inline-block;
+  padding: 0 10px;
+  height: $controlsH;
+  line-height: $controlsH;
+
+  text-align: center;
+  font-size: $controlSize/2;
+
+  border-top-left-radius: .3em;
+  border-top-right-radius: .3em;
+
+  background: $controlsBackground;
+
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+
+  &.hidden { opacity: 0 }
+  @include transition('opacity', '.5s');
+
+  .space {
+    display: inline-block;
+    width: 16px;
+  }
+
+
+  .control {
+    display: inline-block;
+    vertical-align: middle;
+    height: $controlSize;
+    margin: 0;
+
+    line-height: $controlSize/2;
+    font-size: $controlSize/2;
+    text-align: center;
+
+    background: none;
+    color: $activeColor;
+  }
+
+  button.control {
+    width: $controlSize;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    text-shadow: none;
+
+    cursor: pointer;
+
+    i {
+      display: inline-block;
+      height: $controlSize/2;
+      width: $controlSize/2;
+      text-align: center;
+    }
+
+    @include transition('color, text-shadow', '.2s, .1s');
+
+    &:hover, &.active {
+      text-shadow: 0 0 1.25em rgba(255, 255, 255, .3);
+      color: $hoverColor;
+    }
+    &:active {
+      text-shadow: 0 0 1.25em rgba(255, 255, 255, .6);
+      color: lighten($activeColor, 20%);
+    }
+    &:disabled {
+      text-shadow: none;
+      color: $disabledColor;
+    };
+
+
+
+  }
+
+
+  .counter {
+    color: $disabledColor;
+
+     .current, .divider, .count {
+       display: inline-block;
+       height: $controlSize;
+       line-height: $controlSize;
+       width: $controlSize/4*3;
+       border: 0;
+       margin: 0;
+       outline: 0;
+       padding: 0;
+
+       font-size: $controlSize /2 - 2;
+       text-align: center;
+
+       cursor: default;
+    }
+
+    input.current {
+      color: $hoverColor;
+
+      line-height: 14px;
+      background: none;
+      font-family: inherit;
+    }
+
+    .divider {
+      width: $controlSize/2;
+    }
+
+    .count {
+      width: $controlSize/4*3;
+    }
+
+  }
+
+  .scaler {
+
+    .scroll {
+      width: $scrollWidth;
+
+      &.hideable {
+        width: 0;
+        overflow: hidden;
+        @include transition('width', '.5s');
+      }
+
+      .ord {
+        position: relative;
+        top: 50%;
+        height: $ordHeight;
+        width: $scrollWidth - $handlerWidth;
+        margin: -$ordHeight/2 $handlerWidth/2 0 $handlerWidth/2;;
+        vertical-align: middle;
+
+        background: $disabledColor;
+        cursor: pointer;
+
+        .handler {
+          position: absolute;
+          height: $handlerHeight;
+          width: $handlerWidth;
+          left: -$handlerWidth/2;
+          top: 50%;
+          margin-top: -$handlerHeight/2;
+          border: 0;
+          padding: 0;
+
+          background: $hoverColor;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &:hover {
+       .scroll.hideable {
+         width: $scrollWidth;
+       }
+       .scale {
+         text-shadow: 0 0 1.25em rgba(255, 255, 255, .3);
+         color: $hoverColor;
+       }
+       .handler {
+         background: $hoverColor;
+       }
+     }
+
+  }
+
+  .settings {
+    position: relative;
+    font-size: 14px;
+    letter-spacing:0;
+
+    .menu {
+      display: none;
+      right: -10px;
+      position: absolute;
+      bottom: 41px;
+
+      position: absolute;
+      width: $controlSize*6 - 10;
+      height: auto;
+
+      background: $controlsBackground;
+      border-bottom: 1px solid darken($disabledColor,30%);
+      border-radius: .3em;
+
+      .handler {
+        position: relative;
+        &:first-of-type .selector {
+          border: 0;
+        }
+      }
+
+      .selector {
+        height: $controlsH;
+        line-height: $controlsH;
+
+        border-top: 1px solid darken($disabledColor,30%);
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, .25);
+
+        &::before,
+        &:after {
+          color: $disabledColor;
+          display: inline-block;
+        }
+        &::before {
+          position: absolute;
+          left: 18px;
+          text-align: left;
+          content: attr(data-description)
+        }
+        &::after {
+          content: "\f0d7";
+
+          display: inline-block;
+
+          width:  $controlSize;
+          line-height: $controlSize;
+          margin: 0 10px;
+          text-align: center;
+
+          font-family: 'icomoon';
+        }
+      }
+
+      .list {
+        display: none;
+        padding: 0;
+        margin: 0;
+
+        background: rgba(0, 0, 0, 0.49);
+        border-top: 1px solid darken($disabledColor,30%);
+
+        list-style: none;
+
+
+        li {
+          height: $controlSize;
+          line-height: $controlSize;
+
+          color: $activeColor;
+          border: 1px solid #000000;
+          @include transition('background, color', '.2s, .2s');
+
+          &:hover {
+            background: rgba(255, 255, 255, .04);
+          }
+
+          &.active {
+            color: $disabledColor;
+            background: rgba(0, 0, 0, .025);
+
+            &::after {
+              content: "\f00c";
+
+            }
+          }
+
+          &::after {
+            content: "";
+            display: inline-block;
+
+            width:  $controlSize;
+            line-height: $controlSize;
+            margin: 0 10px;
+            text-align: center;
+
+            font-family: 'icomoon';
+          }
+
+        }
+      }
+
+      .selector, li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  // all handhelds
+  @media only screen and (max-width: 767px) {
+
+    border-radius: 0;
+    display:block;
+    .fullscreen {
+      display: none;
+    }
+    .scroll.hideable {
+
+      display: none;
+      width: $scrollWidth;
+      overflow: auto;
+    }
+    .selector {
+      height: $controlSize;
+      line-height: $controlSize;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+
+  // handhelds
+  @include respond-to(handhelds) {
+    .scroll.hideable {
+
+      display: none;
+      width: $scrollWidth;
+      overflow: auto;
+    }
+  };
+
+  // wide-handhelds
+  @include respond-to(wide-handhelds) {
+
+  };
+
+}
+
+.backCounter {
+  $size: $controlSize*2;
+
+  position: absolute;
+  z-index: 0;
+  @include absoluteCentered($size, $size);
+
+  color: $disabledColor;
+  font-size: $size;
+  text-align: center;
+}
