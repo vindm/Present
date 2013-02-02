@@ -233,32 +233,32 @@ new function( document, $, undefined ) {
 
             function btn( cls, icon, title ) {
                 return $('<button/>', {
-                    class: 'control ' + cls,
-                    html: '<i class="icon-'+ (icon? icon: cls) +'"></i>',
-                    title: title
+                    'class': 'control ' + cls,
+                    'html': '<i class="icon-'+ (icon? icon: cls) +'"></i>',
+                    'title': title
                 });
             }
 
             // define controls structure
-            var $backCounter = $('<div/>', { class: 'backCounter', text: 1 }),
-                $footer      = $('<div/>', { class: 'footer' }),
+            var $backCounter = $('<div/>', { 'class': 'backCounter', 'text': 1 }),
+                $footer      = $('<div/>', { 'class': 'footer' }),
                 $space       = '<span class="space"></span>',
 
-                $controls = $('<div/>',{ class: 'controls'}),
+                $controls = $('<div/>',{ 'class': 'controls'}),
 
-                $counter = $('<div/>', { class: 'control counter' }),
-                $current = $('<input/>', { class: 'current', type: 'text', value: 1, maxlength:3, all: 7 }),
-                $count   = $('<span/>',  { class: 'count', text: me.slidesCount }),
+                $counter = $('<div/>', { 'class': 'control counter' }),
+                $current = $('<input/>', { 'class': 'current', 'type': 'text', 'value': 1, 'maxlength': 3, 'all': 7 }),
+                $count   = $('<span/>',  { 'class': 'count', 'text': me.slidesCount }),
 
-                $scaler = $('<div/>', { class: 'control scaler' }),
+                $scaler = $('<div/>', { 'class': 'control scaler' }),
                 $scale  = btn( 'scale', 'zoom-in' ),
-                $scroll = $('<div/>', { class: 'control scroll', min: 40, max: 100}),
+                $scroll = $('<div/>', { 'class': 'control scroll', 'min': 40, 'max': 100}),
 
-                $settings = $('<div/>', { class: 'control settings' }),
+                $settings = $('<div/>', { 'class': 'control settings' }),
                 $sets = btn( 'sets', 'cog' ),
-                $menu = $('<div/>', { class: 'menu' }),
-                $themeSelector = $('<div/>', { class: 'handler themeSelector' }),
-                $transToggler  = $('<div/>', { class: 'handler transToggler' }),
+                $menu = $('<div/>', { 'class': 'menu' }),
+                $themeSelector = $('<div/>', { 'class': 'handler themeSelector' }),
+                $transToggler  = $('<div/>', { 'class': 'handler transToggler' }),
 
                 $prev = btn( 'prev', 'arrow-left' ),
                 $next = btn( 'next', 'arrow-right' ),
@@ -267,7 +267,7 @@ new function( document, $, undefined ) {
 
             // build controls
             $scaler.append( $scale, $scroll );
-            $counter.append( $current, $('<span/>', { class: 'divider', text: '/' }), $count );
+            $counter.append( $current, $('<span/>', { 'class': 'divider', 'text': '/' }), $count );
             $settings.append( $sets, $menu.append( $themeSelector, $transToggler ) );
             $controls.append(
                 $counter, $space,
@@ -719,9 +719,9 @@ new function( document, $, undefined ) {
         },
         _addFontStyle: function() {
             $('body').append( $('<link/>', {
-                rel: 'stylesheet',
-                type:'text/css',
-                href: 'http://fonts.googleapis.com/css?family=' +
+                'rel': 'stylesheet',
+                'type':'text/css',
+                'href': 'http://fonts.googleapis.com/css?family=' +
                     'Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono'
             }));
         }
@@ -826,11 +826,11 @@ new function( document, $, undefined ) {
         var me = this,
             $elem = $( elem );
 
-        var $selector = $('<div/>', { class: 'selector' }),
+        var $selector = $('<div/>', { 'class': 'selector' }),
             $list = $('<ul/>', {
-                class: 'list',
-                html: $.map( list, function( item ) {
-                    return $('<li/>', { text: item });
+                'class': 'list',
+                'html': $.map( list, function( item ) {
+                    return $('<li/>', { 'text': item });
                 })
             });
 

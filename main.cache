@@ -1,11 +1,12 @@
 CACHE MANIFEST
-# version: 1
-http://code.jquery.com/jquery-latest.js
-javascripts/logic.js
+# version: 1в
+https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js
+javascripts/present.min.js
 javascripts/prettify.js
 stylesheets/default.css
-http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono
 stylesheets/fonts/icomoon.svg
+http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono
+
 http://html5slides.googlecode.com/svn/trunk/template/images/example-graph.png
 http://html5slides.googlecode.com/svn/trunk/template/images/example-cat.jpg
 NETWORK:
