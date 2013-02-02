@@ -435,7 +435,6 @@ new function( document, $, undefined ) {
 
         toggleTransition: function( mode ) {
             var currentMode = this.transition;
-            console.log(currentMode, mode )
             if ( currentMode === mode ) return;
 
             if( mode === null ) mode = !currentMode;
@@ -598,7 +597,6 @@ new function( document, $, undefined ) {
 
             // check for mouseover state
             if ( !$elem.is('.focused') ) return;
-            console.log(event.keyCode)
             switch ( event.keyCode ) {
                 case 32: // space
                     me.status.playing? me.pause(): me.play();
@@ -687,8 +685,6 @@ new function( document, $, undefined ) {
                 initial = opts.initialTheme;
 
             return function changeTheme ( theme ) {
-
-                console.log(current)
                 if ( theme ) {
                     current = $.inArray( theme, themes );
                 }
@@ -698,7 +694,6 @@ new function( document, $, undefined ) {
                 else {
                     current += 1;
                 }
-                console.log(current)
 
                 if ( current >= themes.length || current < 0 ) current = 0;
 
