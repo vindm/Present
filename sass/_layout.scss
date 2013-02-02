@@ -1,0 +1,67 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  font: 100% Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+
+.presentation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  background-color: $presentationBackground;
+  @include transition('background-color', '1.5s');
+
+
+  .slide {
+    display: none;
+    @include absoluteCentered($slideW, $slideH, $slideP);
+
+    overflow: hidden;
+    border-radius: .3em;
+
+    background: $slideBackground;
+    color: $color;
+
+    &.current {
+      display: block;
+      z-index: 2;
+    }
+
+  }
+
+}
+
+.presentation {
+  &:full-screen {
+    display: block;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+  }
+  &:fullscreen {
+    display: block;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+  }
+  &:-webkit-full-screen, &:-moz-full-screen {
+    display: block;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+  }
+}
+:-webkit-full-screen, :-webkit-full-screen .presentation {
+  display: block;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}

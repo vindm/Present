@@ -1,0 +1,292 @@
+.slide {
+
+  .steps {
+    & > :not(.steps) {
+      opacity: 1;
+      @include transition('opacity', '.5s');
+    }
+    .step {
+      opacity: 0;
+    }
+  }
+
+
+  .blue   { color: rgb(0, 102, 204) }
+  .yellow { color: rgb(255, 211, 25) }
+  .green  { color: rgb(0, 138, 53) }
+  .red    { color: rgb(255, 0, 0); }
+  .black  { color: black }
+  .white  { color: white }
+
+  b { font-weight: 600 }
+
+  a {
+    @include colorlink($linkColor);
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    margin-top: .75em;
+    &:first-child { margin-top: 0 }
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    letter-spacing: -0.05em;
+  }
+  h1, h2, h3 { color: $titleColor }
+  h4, h5, h6 {
+    color: $subTitleColor;
+    margin-top: 1em;
+  }
+  h1 {
+    margin-top: 2.5em;
+
+    font-size: 2.5em;
+    line-height: 1.5em;
+  }
+  h2 {
+    position: absolute;
+    bottom: 3.5em;
+
+    font-size: 2.85em;
+    line-height: 3em;
+  }
+  h3 {
+
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
+  ul {
+    list-style: none;
+    margin: 2.5em 0 0 1em;
+    padding: 0;
+
+    &:first-child {
+      margin-top: 0 }
+
+    ul {
+      margin-top: .5em }
+
+    li {
+      padding: 0;
+      margin: 0;
+      margin-bottom: .5em;
+
+      &::before {
+        position: absolute;
+        width: 1em;
+        margin-left: -1em;
+
+        content: '·';
+      }
+    }
+  }
+
+
+  table {
+    width: 100%;
+    margin-top: 1.5em;
+    border-collapse: collapse;
+    box-shadow: inset 0 .1em .6em rgba(0, 0, 0, .1);
+    @include borderRadius( .3em );
+
+    th {
+      font-weight: 600;
+      text-align: left;
+    }
+    td, th {
+      border: 1px solid rgba(0, 0, 0, .04);
+      padding: .3em .6em;
+      vertical-align: top;
+    }
+  }
+
+  .source {
+    position: absolute;
+    right:1em;
+    bottom: 1em;
+
+    font-size: .75em;
+    letter-spacing: 0;
+    line-height: 1.1em;
+  }
+
+  q {
+    display: block;
+    margin-left : 1.5em;
+    margin-top  : 2.5em;
+    margin-right: 6em;
+
+    line-height: 1.5em;
+    font-size: 2em;
+
+
+    &::before,
+    &::after {
+      position: absolute;
+      font-size: 2em;
+      color: rgb(192, 192, 192);
+    }
+
+    &::before {
+      content: '“';
+
+      display: inline-block;
+      margin-left: -2.1em;
+      width: 2em;
+
+      text-align: right;
+    }
+    &::after {
+      content: '”';
+
+      margin-left: .1em;
+    }
+  }
+
+  div.author {
+    text-align: right;
+    font-size: 1.5em;
+
+    margin-top: 1em;
+    margin-right: 9em;
+
+    &::before {
+      content: '—';
+    }
+  }
+
+  img.centered {
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  &.fill {
+
+    h3, li, p {
+      margin: 0 -1em;
+      padding: 0 1em;
+
+      background: rgba(255, 255, 255, .75);
+      color: #292929!important;
+    }
+
+    img {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+
+      @include borderRadius( .6em );
+    }
+
+  }
+
+  &.smaller {
+
+    p, ul,
+    table {
+      font-size: 0.75em;
+      line-height: 1.2em;
+      letter-spacing: 0;
+    }
+
+    pre {
+      font-size: .65em;
+      line-height: 1.1em;
+    }
+
+    q {
+      font-size: 1.25em;
+      line-height: 1.2em;
+      &::before,
+      &::after { font-size: 1.5em }
+    }
+    .author { margin-right: 6em }
+
+  }
+
+  pre {
+    font-family: 'DejaVu Sans Mono', monospace;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    letter-spacing: -0.1em;
+
+    padding: .3em .6em;
+    margin: .25em 0;
+    overflow: hidden;
+
+    color:#BBB;
+    background: #323232;
+    @include borderRadius( .3em );
+  }
+  code {
+    font-size: 95%;
+    font-family: monospace;
+    color: #F57D7D;
+  }
+
+  pre.prettyprint{
+    .pln { color:#BBB }
+    .str { color: #A5C261 }
+    .kwd { color: #CC7833 }
+    .com {
+      color: gray;
+      font-style:italic
+    }
+    .typ { color: #BBB }
+    .lit { color: #A5C261 }
+    .pun,
+    .opn,
+    .clo { color: #660 }
+    .tag { color: #E8BF6A}
+    .atn { color: #D353CD}
+    .atv { color: #A5C261}
+    .dec,
+    .var { color: #606 }
+    .fun { color: red }
+  }
+  ol.linenums {
+    margin-top:0;
+    margin-bottom:0
+  }
+  li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+  li.L1,li.L3,li.L5,li.L7,li.L9 { background: #eee }
+
+  // all handhelds
+  @media only screen and (max-width: 767px) {
+
+
+    .selector {
+      height: $controlSize;
+      line-height: $controlSize;
+      border-radius: 0;
+      padding: 0;
+    }
+    pre{
+       letter-spacing: -0.15em;
+     }
+}
+
+  // handhelds
+  @include respond-to(handhelds) {
+
+  };
+
+  // wide-handhelds
+  @include respond-to(wide-handhelds) {
+
+  };
+
+
+}
+
