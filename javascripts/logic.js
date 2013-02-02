@@ -121,7 +121,8 @@ new function( document, $, undefined ) {
                 stepClass : 'step',
                 timeAttr  : 'data-timer'
             },
-            initialSlide : 1,     //
+
+            initialSlide : 1,
             presentClass : 'presentation',
             slidesClasses: [ 'farPrev', 'prev', 'current', 'next', 'farNext' ],
             presentThemes: [ 'Light', 'Dark' ]

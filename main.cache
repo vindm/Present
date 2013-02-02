@@ -1,13 +1,17 @@
 CACHE MANIFEST
-# version: 1в
+# version: 12
+
 https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js
 javascripts/present.min.js
 javascripts/prettify.js
+
 stylesheets/default.css
 stylesheets/fonts/icomoon.svg
+stylesheets/fonts/icomoon.woff
 http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono
 
-http://html5slides.googlecode.com/svn/trunk/template/images/example-graph.png
-http://html5slides.googlecode.com/svn/trunk/template/images/example-cat.jpg
+images/example-graph.png
+images/example-cat.jpg
+
 NETWORK:
 *
