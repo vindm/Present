@@ -108,11 +108,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_controls.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_controls.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_controls.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="327" column="0" selection-start="6117" selection-end="6117" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="302" column="0" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.16929698">
+              <folding>
+                <element signature="e#2407#3052#0" expanded="false" />
+                <element signature="e#3072#3318#0" expanded="false" />
+                <element signature="e#3337#5682#0" expanded="false" />
+                <element signature="e#3851#4556#0" expanded="false" />
+                <element signature="e#4570#5529#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cache" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.cache" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cache">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.021520803">
+            <state line="1" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,7 +158,6 @@
         <option value="/tmp/fz3temp-1/logic.js" />
         <option value="$PROJECT_DIR$/sass/_icons.scss" />
         <option value="$PROJECT_DIR$/sass/_mixins.scss" />
-        <option value="$PROJECT_DIR$/sass/_controls.scss" />
         <option value="$PROJECT_DIR$/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/sass/default.scss" />
         <option value="$PROJECT_DIR$/sass/_content.scss" />
@@ -161,6 +166,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/javascripts/logic.js" />
         <option value="$PROJECT_DIR$/main.cache" />
+        <option value="$PROJECT_DIR$/sass/_controls.scss" />
       </list>
     </option>
   </component>
@@ -485,13 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_controls.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="327" column="0" selection-start="6117" selection-end="6117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="17" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
@@ -509,13 +508,6 @@
     <entry file="file://$PROJECT_DIR$/sass/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="344" column="47" selection-start="11188" selection-end="11188" vertical-scroll-proportion="-2.3076923">
           <folding />
         </state>
       </provider>
@@ -575,10 +567,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="344" column="47" selection-start="11188" selection-end="11188" vertical-scroll-proportion="-2.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.021520803">
+        <state line="1" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_controls.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="302" column="0" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.16929698">
+          <folding>
+            <element signature="e#2407#3052#0" expanded="false" />
+            <element signature="e#3072#3318#0" expanded="false" />
+            <element signature="e#3337#5682#0" expanded="false" />
+            <element signature="e#3851#4556#0" expanded="false" />
+            <element signature="e#4570#5529#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

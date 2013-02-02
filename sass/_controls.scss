@@ -301,19 +301,20 @@
   }
 
 
-  // all handhelds
   @media only screen and (max-width: 767px) {
 
     border-radius: 0;
     display:block;
+    padding: 0;
     .fullscreen {
       display: none;
     }
+    .space {
+      width: 4px;
+    }
     .scroll.hideable {
-
-      display: none;
-      width: $scrollWidth;
-      overflow: auto;
+      width: $scrollWidth!important;
+      overflow: visible!important;
     }
     .selector {
       height: $controlSize;
@@ -322,21 +323,6 @@
       padding: 0;
     }
   }
-
-  // handhelds
-  @include respond-to(handhelds) {
-    .scroll.hideable {
-
-      display: none;
-      width: $scrollWidth;
-      overflow: auto;
-    }
-  };
-
-  // wide-handhelds
-  @include respond-to(wide-handhelds) {
-
-  };
 
 }
 
