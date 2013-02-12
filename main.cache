@@ -1,11 +1,11 @@
 CACHE MANIFEST
-# version: 12ы
+# version: 1
 
 https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js
 javascripts/present.min.js
 javascripts/prettify.js
 
-stylesheets/default.css
+stylesheets/present.css
 stylesheets/fonts/icomoon.svg
 stylesheets/fonts/icomoon.woff
 http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono

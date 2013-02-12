@@ -23,7 +23,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="344" column="47" selection-start="11188" selection-end="11188" vertical-scroll-proportion="-2.3076923">
+            <state line="9" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -33,41 +33,7 @@
         <entry file="file://$PROJECT_DIR$/javascripts/logic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="122" column="12" selection-start="4249" selection-end="4249" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#4494#5658#0" expanded="false" />
-                <element signature="e#5692#7965#0" expanded="false" />
-                <element signature="e#8001#14238#0" expanded="false" />
-                <element signature="e#14280#14810#0" expanded="false" />
-                <element signature="e#14845#15228#0" expanded="false" />
-                <element signature="e#15048#15216#0" expanded="false" />
-                <element signature="e#15260#15326#0" expanded="false" />
-                <element signature="e#15365#15654#0" expanded="false" />
-                <element signature="e#15681#15934#0" expanded="false" />
-                <element signature="e#15980#16316#0" expanded="false" />
-                <element signature="e#16360#16539#0" expanded="false" />
-                <element signature="e#16566#17653#0" expanded="false" />
-                <element signature="e#17680#17955#0" expanded="false" />
-                <element signature="e#17983#18258#0" expanded="false" />
-                <element signature="e#18288#18462#0" expanded="false" />
-                <element signature="e#18497#19037#0" expanded="false" />
-                <element signature="e#19076#19451#0" expanded="false" />
-                <element signature="e#19492#20431#0" expanded="false" />
-                <element signature="e#20472#20769#0" expanded="false" />
-                <element signature="e#20812#22016#0" expanded="false" />
-                <element signature="e#22056#23395#0" expanded="false" />
-                <element signature="e#23434#24396#0" expanded="false" />
-                <element signature="e#24432#24599#0" expanded="false" />
-                <element signature="e#24635#24935#0" expanded="false" />
-                <element signature="e#24986#25916#0" expanded="false" />
-                <element signature="e#25941#27839#0" expanded="false" />
-                <element signature="e#27906#28748#0" expanded="false" />
-                <element signature="e#28773#29282#0" expanded="false" />
-                <element signature="e#29328#29724#0" expanded="false" />
-                <element signature="e#29767#30308#0" expanded="false" />
-                <element signature="e#30361#30564#0" expanded="false" />
-                <element signature="e#30604#33050#0" expanded="false" />
-                <element signature="e#33085#33829#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,35 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/default.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="162" selection-end="169" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_layout.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="13" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_controls.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sass/_controls.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="302" column="0" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.16929698">
-              <folding>
-                <element signature="e#2407#3052#0" expanded="false" />
-                <element signature="e#3072#3318#0" expanded="false" />
-                <element signature="e#3337#5682#0" expanded="false" />
-                <element signature="e#3851#4556#0" expanded="false" />
-                <element signature="e#4570#5529#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,11 +74,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cache" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.cache" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cache">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+            <state line="1" column="12" selection-start="27" selection-end="27" vertical-scroll-proportion="0.020804439">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_controls.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_controls.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="302" column="0" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#2407#3052#0" expanded="false" />
+                <element signature="e#3072#3318#0" expanded="false" />
+                <element signature="e#3337#5682#0" expanded="false" />
+                <element signature="e#3851#4556#0" expanded="false" />
+                <element signature="e#4570#5529#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,10 +120,10 @@
         <option value="$PROJECT_DIR$/sass/_content.scss" />
         <option value="$PROJECT_DIR$/sass/_layout.scss" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/javascripts/logic.js" />
-        <option value="$PROJECT_DIR$/main.cache" />
         <option value="$PROJECT_DIR$/sass/_controls.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/main.cache" />
       </list>
     </option>
   </component>
@@ -222,6 +179,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,26 +194,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Present" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Presentarium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Present" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Presentarium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Present" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="preferences.editor" />
     <property name="JavaScriptLanguageLevel" value="ES5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="JavaScriptPreferStrict" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -342,7 +327,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19825853" sideWeight="0.9626667" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2009377" sideWeight="0.9626667" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933334" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -412,6 +397,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sass/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cache">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="21" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
@@ -422,41 +421,7 @@
     <entry file="file://$PROJECT_DIR$/javascripts/logic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#4494#5658#0" expanded="false" />
-            <element signature="e#5692#7965#0" expanded="false" />
-            <element signature="e#8001#14238#0" expanded="false" />
-            <element signature="e#14280#14810#0" expanded="false" />
-            <element signature="e#14845#15228#0" expanded="false" />
-            <element signature="e#15048#15216#0" expanded="false" />
-            <element signature="e#15260#15326#0" expanded="false" />
-            <element signature="e#15365#15654#0" expanded="false" />
-            <element signature="e#15681#15934#0" expanded="false" />
-            <element signature="e#15980#16316#0" expanded="false" />
-            <element signature="e#16360#16539#0" expanded="false" />
-            <element signature="e#16566#17653#0" expanded="false" />
-            <element signature="e#17680#17955#0" expanded="false" />
-            <element signature="e#17983#18258#0" expanded="false" />
-            <element signature="e#18288#18462#0" expanded="false" />
-            <element signature="e#18497#19037#0" expanded="false" />
-            <element signature="e#19076#19451#0" expanded="false" />
-            <element signature="e#19492#20431#0" expanded="false" />
-            <element signature="e#20472#20769#0" expanded="false" />
-            <element signature="e#20812#22016#0" expanded="false" />
-            <element signature="e#22056#23395#0" expanded="false" />
-            <element signature="e#23434#24396#0" expanded="false" />
-            <element signature="e#24432#24599#0" expanded="false" />
-            <element signature="e#24635#24935#0" expanded="false" />
-            <element signature="e#24986#25916#0" expanded="false" />
-            <element signature="e#25941#27839#0" expanded="false" />
-            <element signature="e#27906#28748#0" expanded="false" />
-            <element signature="e#28773#29282#0" expanded="false" />
-            <element signature="e#29328#29724#0" expanded="false" />
-            <element signature="e#29767#30308#0" expanded="false" />
-            <element signature="e#30361#30564#0" expanded="false" />
-            <element signature="e#30604#33050#0" expanded="false" />
-            <element signature="e#33085#33829#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -470,25 +435,14 @@
         <state line="14" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_icons.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="17" selection-start="2205" selection-end="2210" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="116" column="17" selection-start="2205" selection-end="2210" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="28" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_variables.scss">
@@ -515,41 +469,7 @@
     <entry file="file://$PROJECT_DIR$/javascripts/logic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="122" column="12" selection-start="4249" selection-end="4249" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#4494#5658#0" expanded="false" />
-            <element signature="e#5692#7965#0" expanded="false" />
-            <element signature="e#8001#14238#0" expanded="false" />
-            <element signature="e#14280#14810#0" expanded="false" />
-            <element signature="e#14845#15228#0" expanded="false" />
-            <element signature="e#15048#15216#0" expanded="false" />
-            <element signature="e#15260#15326#0" expanded="false" />
-            <element signature="e#15365#15654#0" expanded="false" />
-            <element signature="e#15681#15934#0" expanded="false" />
-            <element signature="e#15980#16316#0" expanded="false" />
-            <element signature="e#16360#16539#0" expanded="false" />
-            <element signature="e#16566#17653#0" expanded="false" />
-            <element signature="e#17680#17955#0" expanded="false" />
-            <element signature="e#17983#18258#0" expanded="false" />
-            <element signature="e#18288#18462#0" expanded="false" />
-            <element signature="e#18497#19037#0" expanded="false" />
-            <element signature="e#19076#19451#0" expanded="false" />
-            <element signature="e#19492#20431#0" expanded="false" />
-            <element signature="e#20472#20769#0" expanded="false" />
-            <element signature="e#20812#22016#0" expanded="false" />
-            <element signature="e#22056#23395#0" expanded="false" />
-            <element signature="e#23434#24396#0" expanded="false" />
-            <element signature="e#24432#24599#0" expanded="false" />
-            <element signature="e#24635#24935#0" expanded="false" />
-            <element signature="e#24986#25916#0" expanded="false" />
-            <element signature="e#25941#27839#0" expanded="false" />
-            <element signature="e#27906#28748#0" expanded="false" />
-            <element signature="e#28773#29282#0" expanded="false" />
-            <element signature="e#29328#29724#0" expanded="false" />
-            <element signature="e#29767#30308#0" expanded="false" />
-            <element signature="e#30361#30564#0" expanded="false" />
-            <element signature="e#30604#33050#0" expanded="false" />
-            <element signature="e#33085#33829#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -560,30 +480,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/default.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="162" selection-end="169" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="344" column="47" selection-start="11188" selection-end="11188" vertical-scroll-proportion="-2.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_controls.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="302" column="0" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.16929698">
+        <state line="302" column="0" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#2407#3052#0" expanded="false" />
             <element signature="e#3072#3318#0" expanded="false" />
@@ -591,6 +490,20 @@
             <element signature="e#3851#4556#0" expanded="false" />
             <element signature="e#4570#5529#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="27" selection-end="27" vertical-scroll-proportion="0.020804439">
+          <folding />
         </state>
       </provider>
     </entry>
