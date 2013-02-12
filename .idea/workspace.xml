@@ -23,8 +23,11 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.625">
-              <folding />
+            <state line="86" column="39" selection-start="3128" selection-end="3128" vertical-scroll-proportion="-18.333334">
+              <folding>
+                <element signature="tag#article#0;tag#section#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#article#1;tag#section#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,7 +80,7 @@
       <file leaf-file-name="main.cache" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cache">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="12" selection-start="27" selection-end="27" vertical-scroll-proportion="0.020804439">
+            <state line="1" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.020804439">
               <folding />
             </state>
           </provider>
@@ -495,14 +498,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.625">
-          <folding />
+        <state line="86" column="39" selection-start="3128" selection-end="3128" vertical-scroll-proportion="-18.333334">
+          <folding>
+            <element signature="tag#article#0;tag#section#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#article#1;tag#section#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="27" selection-end="27" vertical-scroll-proportion="0.020804439">
+        <state line="1" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.020804439">
           <folding />
         </state>
       </provider>
