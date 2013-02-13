@@ -23,7 +23,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="43" selection-start="3071" selection-end="3071" vertical-scroll-proportion="-17.708334">
+            <state line="71" column="47" selection-start="2440" selection-end="2440" vertical-scroll-proportion="-8.75">
               <folding>
                 <element signature="tag#article#0;tag#section#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#article#1;tag#section#0;tag#body#0;tag#html#0" expanded="false" />
@@ -80,7 +80,7 @@
       <file leaf-file-name="main.cache" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cache">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.020804439">
+            <state line="1" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.020804439">
               <folding />
             </state>
           </provider>
@@ -498,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="43" selection-start="3071" selection-end="3071" vertical-scroll-proportion="-17.708334">
+        <state line="71" column="47" selection-start="2440" selection-end="2440" vertical-scroll-proportion="-8.75">
           <folding>
             <element signature="tag#article#0;tag#section#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#article#1;tag#section#0;tag#body#0;tag#html#0" expanded="false" />
@@ -508,7 +508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.020804439">
+        <state line="1" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.020804439">
           <folding />
         </state>
       </provider>
